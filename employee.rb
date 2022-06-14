@@ -35,6 +35,7 @@ class Manager < Employee
         multiplyer * self.sum_salary    
     end
 
+    protected # We had to add this to protect the mothod on being called on the outside of the class
     def sum_salary
         return 0 if @employees.empty?
 
